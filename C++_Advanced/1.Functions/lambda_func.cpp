@@ -32,5 +32,5 @@ int main(){
 // [] = Variable outide the function
 // () = parameters of the function
 
-// function<void()> func = if add lambda function is added then it will be function<int(int , int)> func
-//                         add executed as fun(3, 5)
+// function<void()> func = if lambda function is "add" then it will be function<int(int,int)> func
+//                         and "add" will be executed as fun(3, 5)
