@@ -1,0 +1,9 @@
+Product: Soap
+Price: 30
+
+Product: Deodrant
+Price: 230
+
+Product: Vegetable basket
+Price: 399
+
