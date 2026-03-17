@@ -19,5 +19,5 @@ double getSalary(Employee e){
 
 int main(){
     Employee emp(23456);
-    cout << "Salary: " << getSalary(emp) << '\n';
+    cout << "Salary: " << getSalary(emp) << '\n';		// No need for emp.getSalary()
 }
