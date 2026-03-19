@@ -51,5 +51,12 @@ int main(){
     for(string c : cars){
         cout << c << '\n';
     }
-    cout << '\n';
+
+    // Reverse traversing in iterator
+    cout << "\nReverse printing with iterator: \n";
+    for (auto it = cars.rbegin(); it != cars.rend(); it++)
+    {
+        cout << *it << '\n';
+    }
+    
 }
