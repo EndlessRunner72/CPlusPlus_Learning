@@ -1,0 +1,49 @@
+STATIC LIBRARY
+
+1. Make a header file with declaration of the functions
+2. Make a C++ file defining the functions
+3. Compile library's cpp file to object file
+
+"Command": g++ "-c" source_file.cpp -o source_file.o
+
+4. Create a library by the following command
+
+"Command":ar rcs <libfunc.a> source_file.o     (lib in start is imp then whatever you like)
+
+5. Write the program with main()
+
+6. Compile main() prog. using static library
+
+"Command": g++ main.cpp -L. -l<func> -o main     (-L used to indicate folder, -l is linker flag)
+                                    (if library doesnt have lib prefix use -l:library_name)
+
+7. Run the prog.: ./main
+----------------------------------------------------------------------------------------------------
+
+DYNAMIC LIBRARY
+
+1. Make a header file with declaration of the functions
+2. Make a C++ file defining the functions
+3. Compile library's cpp file to object file
+
+"Command": g++ "-fPIC -c" source_file.cpp -o source_file.o
+
+4. Create a library by the following command
+
+"Command": g++ -shared -o <libfunc.so> source_file.o
+
+5. Write program with main()
+
+6. Compile main() prog. using dynamic library
+
+"Command": g++ main.cpp -L. -l<func> -o main     (-L used to indicate folder, -l is linker flag)
+                                    (if library doesnt have lib prefix use -l:library_name)
+
+7. Use the following command to link the path:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+
+8. Run the prog.: ./main
+----------------------------------------------------------------------------------------------------
+
+NOTE: For multiple libraries use:
+g++ main.cpp -L. -lfunc_set1 -lfunc_set2 -o main
