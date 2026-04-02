@@ -1,0 +1,10 @@
+Rule of 5 is a guideline for memory management in C++
+
+It states that if you use one of the below rules you should to use all of them.
+They are mostly used in file management, network sockets, etc.
+
+1. Destructor --> Cleans up the resource when the object "dies" (e.g., delete a pointer).
+2. Copy Constructor	-- > Creates a new object as a "deep copy" of an existing one.
+3. Copy Assignment Operator --> Replaces the data of an already existing object with a copy of another.
+4. Move Constructor	--> Creates a new object by "stealing" resources from a temporary object.
+5. Move Assignment Operator -->	Replaces data in an existing object by "stealing" from a temporary.
