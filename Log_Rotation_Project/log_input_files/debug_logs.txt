@@ -1,0 +1,40 @@
+Variable 'user_id' assigned value: 10452
+Memory address 0x7ffee1b allocated (size: 256 bytes)
+Pointer 'ptr_buffer' successfully dereferenced
+Array index 45 accessed in 'product_list' vector
+Boolean flag 'is_authenticated' evaluated to: TRUE
+Local cache hit ratio: 0.88 for key 'user_session_pref'
+String 'input_buffer' length: 512 characters
+Heap fragmentation detected at 12%; triggering minor GC
+Entering function: AuthService::validateToken(string)
+Exiting function: DBConnector::connect() with status: SUCCESS
+Recursion depth: 4 in directory_tree_walker
+Callback 'onDataReceived' registered for socket: 881
+Function 'process_image' executed in 14.2ms
+Argument 'timeout' passed as: 5000ms
+Overloaded constructor called for class 'PacketHeader'
+Lambda expression triggered by event: MOUSE_CLICK
+SQL Prepared Statement: SELECT * FROM orders WHERE id = ?
+Binding parameter [1] to value: 'ORD-991'
+Database cursor moved to row: 450
+Raw bytes received from DB stream: 1024 bytes
+Transaction isolation level set to: REPEATABLE READ
+Table scan initiated for non-indexed column 'temp_flag'
+Connection pool: 4 idle, 2 busy, 10 max
+Cache miss for SQL query: 'SELECT name FROM users...'
+TCP Header: Sequence Number 104, Ack Number 200
+HTTP Header: User-Agent: Mozilla/5.0 (Windows NT 10.0)
+Payload fragment 3/10 received (128 bytes)
+DNS lookup for 'google.com' returned: 142.250.190.46
+TLS 1.3 Handshake: ServerHello received
+Socket 12 closed by remote peer (FIN packet)
+Retrying packet transmission (Sequence: 405)
+UDP Datagram sent to 192.168.1.5:8080
+Loop iteration 500 of 1000 in 'batch_processor'
+Condition 'x > y' failed; skipping block at line 142
+Switch case 'OS_LINUX' selected in environment_factory
+Try block entered at module 'EncryptionHandler.cpp'
+Catch block reached: Standard Exception caught
+RegEx match found for pattern: /[a-z0-9]+/
+Task 'cleanup_task' added to priority queue
+Signal SIGINT (2) received; ignoring for 500ms

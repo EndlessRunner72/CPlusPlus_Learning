@@ -1,0 +1,40 @@
+High memory usage detected: 85% of available heap allocated
+Disk space low on /var/log: Only 500MB remaining
+CPU load average (4.2) exceeds recommended threshold (3.0)
+Slow query detected: SELECT FROM 'orders' took 1250ms
+Thread pool near capacity: 48/50 threads active
+Database connection pool latency rising: Average 150ms
+Swap space usage increasing; potential memory pressure
+File descriptor usage at 90% of system limit (soft limit: 1024)
+API response time from 'PaymentProvider' is unusually high (2.5s)
+Packet retransmission rate increased on eth0: Potential congestion
+DNS resolution for 'db.internal' took longer than 500ms
+SSL Certificate for 'api.services.com' expires in 7 days
+Received 429 Too Many Requests from 'WeatherAPI'; throttling active
+Unusual traffic spike detected from IP: 185.22.41.10
+WebSocket heartbeats missed: Connection '0x44B' is unstable
+NTP offset (45ms) exceeds synchronization threshold
+Deprecated API endpoint '/v1/login' called by client 'LegacyApp/1.0'
+Configuration key 'max_retries' is missing; using default value (3)
+User 'test_user' attempted to access restricted resource '/admin/settings'
+Cache 'user_profiles' is 95% full; LRU eviction started
+Invalid input format for field 'zip_code'; value truncated
+Job 'daily_report' delayed by 15 minutes due to worker unavailability
+Multiple concurrent logins detected for account ID: 8821
+Fallback mechanism triggered: Using local disk instead of S3 bucket
+Failed login attempt for user 'root' from unknown location
+Potentially malicious string detected in URL parameter: 'DROP TABLE'
+SSH access attempted with expired public key: 'dev-laptop-01'
+Unencrypted connection attempt on port 80; redirecting to 443
+Cross-origin request blocked: Origin 'http://unknown-site.io' not allowed
+Large data export requested by user 'intern_01' (50,000 rows)
+CPU fan speed fluctuating; potential hardware wear detected
+Ambient temperature in Server Room 2 reached 28°C
+Secondary power supply (PSU-2) reporting intermittent voltage
+Battery backup (UPS) self-test failed: Service required
+Input/Output latency on /dev/sda increased by 200%
+Kernel warning: Taint flag set due to proprietary driver
+Virtual Machine 'WebNode-04' reported 'Steal Time' above 5%
+Filesystem /data reached 90% inode usage
+Backup integrity check: Minor corruption found in non-critical index
+Graceful shutdown interrupted: Forcing process termination in 5s

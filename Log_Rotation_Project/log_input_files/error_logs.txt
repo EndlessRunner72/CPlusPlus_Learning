@@ -1,0 +1,40 @@
+Connection timeout after 30000ms. Host: 192.168.1.50
+Failed to resolve hostname 'api.internal.service' via DNS
+Socket exception: Broken pipe (Write failed)
+TCP Three-way handshake failed for port 443
+Network unreachable: No route to host 10.0.0.254
+SSL Handshake failed: Insecure cipher suite requested by client
+Upstream server returned 502 Bad Gateway
+Keep-alive timeout reached; closing connection
+Packet loss detected above 15% threshold on interface eth0
+DHCP lease expired; failed to renew IP address
+SQL State 23505: Duplicate key violates unique constraint 'users_pkey'
+Deadlock victim: Transaction was rolled back to prevent hang
+Database disk is full. Cannot write to WAL file
+PostgreSQL: Too many clients already (limit 100 reached)
+Redis: OOM command not allowed when used memory > 'maxmemory'
+Integrity check failed on table 'orders': Checksum mismatch
+Migration failed: Column 'phone_number' does not exist in table 'profiles'
+Slow query detected: Execution time 4500ms exceeds 1000ms limit
+Out of Memory (OOM): Kernel killed process 8842
+File descriptor limit reached: Cannot open new socket
+Permission denied: Cannot write to /var/cache/temp_data
+Segmentation fault (core dumped) at address 0x00007f8
+CPU Throttle: Thermal trip point reached on Core 0
+Input/Output error during sector read on /dev/sdb1
+Read-only file system: Write operation blocked
+Zombie process detected: PID 9912 failed to reap
+NullPointerException: Attempt to invoke virtual method on a null object reference
+Divide by zero error in module 'finance_calculator'
+Stack Overflow: Recursive call exceeded limit of 1024
+Invalid JSON: Unexpected character 'q' at line 1, column 45
+User session 'x991' expired: Token no longer valid
+Authentication failed: Invalid credentials for 'sys_admin'
+Missing required field 'email' in POST request body
+Plugin 'image_resize.so' failed to load: Library not found
+Encryption failed: AES key size 128-bit not supported in FIPS mode
+429 Too Many Requests: Rate limit exceeded for API Key 'bk_90'
+403 Forbidden: User does not have 'read' permissions for resource
+CORS policy blocked request from origin 'http://malicious.com'
+Response body size 25MB exceeds maximum allowed 10MB
+Redirect loop detected: Location header points back to self
