@@ -1,3 +1,5 @@
 # ninja log v5
-0	705	1775724219922991725	CMakeFiles/log_manager.dir/log_generator.cpp.o	87736e6bcd1dfd24
 706	845	1775724220061991812	log_manager	3e07e76effcc5599
+0	705	1775724219922991725	CMakeFiles/log_manager.dir/log_generator.cpp.o	87736e6bcd1dfd24
+1	715	1775724979931744465	CMakeFiles/log_manager.dir/log_generator.cpp.o	87736e6bcd1dfd24
+716	856	1775724980071744493	log_manager	3e07e76effcc5599
