@@ -13,6 +13,7 @@
 #include<atomic>        // So both threads see instantly
 
 #include<vector>
+#include<zip.h>
 using namespace std;
 
 atomic<bool> is_rotating = false;
@@ -132,6 +133,44 @@ void generator(){
     }
 }
 
+bool zipping_files(string source_file, string zipped_file){
+    int error_p = 0;
+    // Create the zip file
+    zip_t* archive = zip_open(zipped_file.c_str(), ZIP_CREATE|ZIP_TRUNCATE, &error_p);
+
+    if(!archive){
+        cerr << "Failed to create zip file" << endl;
+        return false;
+    }
+
+    // Reading the data from source file
+    zip_source_t* source = zip_source_file(archive, source_file.c_str(), 0, 0);
+
+    if (!source)
+    {
+        cerr << "Failed to read the content of the source file" << endl;
+        zip_close(archive);
+        return false;
+    }
+
+    // Adding the file to archive (second arg is the name of the file inside zip so only name is taken rather than the path)
+    if (zip_file_add(archive, filesystem::path(source_file).filename().c_str(), source, ZIP_FL_OVERWRITE) < 0)
+    {
+        cerr << "Failed to add the file to archive" << endl;
+        zip_source_free(source);
+        zip_close(archive);
+        return false;
+    }
+
+    // Closing the archive so compression starts
+    if (zip_close(archive) < 0){
+        cerr << "Failed to write and close the archive" << endl;
+        return false;
+    }
+
+    return true;     
+}
+
 void manage_files(){
     string recentfile_path = "./output_log_files/latest_app_logs.txt";
 
@@ -147,11 +186,25 @@ void manage_files(){
                 is_rotating = true;
                 cout << "Threshold reached!!, Generating a new file" << endl;
 
-                string newfile_path = "./output_log_files/";
-                newfile_path += get_timestring(1) + "_logs.txt" ;
-                filesystem::rename(recentfile_path, newfile_path);
+                string base_folder = "./output_log_files/";
+                string ts = get_timestring(1);
+                
+                string zippedfile_path = base_folder + ts + "_logs.zip";
+                string newfile_path = base_folder + ts + "_logs.txt" ;
 
+                filesystem::rename(recentfile_path, newfile_path);
+                
                 is_rotating = false;
+
+                thread zipping_threads(zipping_files, newfile_path, zippedfile_path);
+                zipping_threads.join();
+
+                if (filesystem::remove(newfile_path)){
+                    cerr << "Old file successfully removed" << endl;
+                }
+                else {
+                    cout << "Warning: Old file wasnt removed!!" << endl;
+                }
             }
         }
         

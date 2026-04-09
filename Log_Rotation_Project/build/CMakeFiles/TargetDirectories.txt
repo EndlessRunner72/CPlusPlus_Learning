@@ -1,0 +1,3 @@
+/home/parth/C++_Learning/Log_Rotation_Project/build/CMakeFiles/log_manager.dir
+/home/parth/C++_Learning/Log_Rotation_Project/build/CMakeFiles/edit_cache.dir
+/home/parth/C++_Learning/Log_Rotation_Project/build/CMakeFiles/rebuild_cache.dir
