@@ -143,7 +143,7 @@ bool zipping_files(string source_file, string zipped_file){
         return false;
     }
 
-    // Reading the data from source file
+    // Reading the data from source file (3rd arg is start from begining and 4th is read till very end of the file)
     zip_source_t* source = zip_source_file(archive, source_file.c_str(), 0, 0);
 
     if (!source)
